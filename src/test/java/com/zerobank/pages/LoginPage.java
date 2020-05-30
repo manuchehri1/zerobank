@@ -19,7 +19,7 @@ public class LoginPage extends BasePage {
     @FindBy(id = "user_remember_me")
     public WebElement remember_me_checkbox;
 
-    @FindBy(className = "alert alert-error")
+    @FindBy(xpath = "//div[@class='alert alert-error']")
     public WebElement errorAlert;
 
     @FindBy(id = "signin_button")
@@ -36,6 +36,7 @@ public class LoginPage extends BasePage {
         this.username.sendKeys(username);
         this.password.sendKeys(password);
         submit.click();
+
 
     }
 
