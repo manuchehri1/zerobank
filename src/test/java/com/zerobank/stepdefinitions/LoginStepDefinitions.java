@@ -20,11 +20,7 @@ public class LoginStepDefinitions {
 
     @Given("when user is on the login page")
     public void when_user_is_on_the_login_page() {
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 5b896766070380d922e81babbabca55ca390f6b9
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         loginPage.signIn.click();
     }
