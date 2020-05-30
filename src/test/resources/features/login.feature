@@ -14,4 +14,17 @@ Feature: User should be able to login
   Scenario: login with valid credentials
     Given when user is on the login page
     When user logins as an authorized user
-    Then verify title is "Zero - Account summary"
+    Then verify title is "Zero - Account Summary"
+
+    @negativeLogin
+  Scenario Outline: login with invalid credentials
+    Given when user is on the login page
+    When user logins with "<username>" and "<password>"
+    Then user should see the "Login and/or password are wrong." error message
+
+    Examples:
+      |username|password|
+      | worng       |      wrong        |
+      |      username       |           |
+      |                     |    password       |
+      |                     |                   |

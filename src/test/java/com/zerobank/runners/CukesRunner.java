@@ -7,10 +7,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features",
-        glue = "src/test/java/com/zerobank/stepdefinitions",
-        dryRun = false
 
+        glue = "com/zerobank/stepdefinitions",
+        features = "src/test/resources",
+        dryRun = false,
+        strict = true,
+        tags = "@negativeLogin"
 
 
 )
