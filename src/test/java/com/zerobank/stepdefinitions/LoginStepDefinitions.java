@@ -16,13 +16,8 @@ public class LoginStepDefinitions {
 
     @Given("when user is on the login page")
     public void when_user_is_on_the_login_page() {
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-
-        driver.get("http://zero.webappsecurity.com/");
-
-//        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
-//        loginPage.signIn.click();
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+        loginPage.signIn.click();
     }
 
     @When("user logins as an authorized user")
