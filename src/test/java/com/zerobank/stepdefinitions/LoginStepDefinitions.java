@@ -21,7 +21,6 @@ public class LoginStepDefinitions {
     @Given("when user is on the login page")
     public void when_user_is_on_the_login_page() {
 
-
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         loginPage.signIn.click();
     }
