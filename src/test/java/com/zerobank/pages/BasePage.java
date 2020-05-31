@@ -8,12 +8,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
-<<<<<<< HEAD
      WebDriver driver = Driver.getDriver();
-=======
-    WebDriver driver = Driver.getDriver();
+
     WebDriverWait wait = new WebDriverWait(driver, 25);
->>>>>>> 5b896766070380d922e81babbabca55ca390f6b9
     public BasePage(){
         PageFactory.initElements(driver,this);
     }
