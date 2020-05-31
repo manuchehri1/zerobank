@@ -8,7 +8,7 @@
 #Users with blank username or password should also not be able to login.
 #When user tries to login with invalid information, error message Login and/or
 #password are wrong. should be displayed.
-
+@login
 Feature: User should be able to login
 
   Scenario: login with valid credentials
