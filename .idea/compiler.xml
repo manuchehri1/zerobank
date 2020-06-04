@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="zerobankautomation" />
         <module name="zerobank" />
+        <module name="zerobank_new" />
+        <module name="zerobankautomation" />
       </profile>
     </annotationProcessing>
   </component>
